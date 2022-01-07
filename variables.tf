@@ -1,6 +1,7 @@
 variable "resource_group_name" {
   description = "Resource group name"
   type        = string
+  default     = "swjeong-aks-rg"
 }
 
 variable "location" {
@@ -12,11 +13,20 @@ variable "location" {
 variable "names" {
   description = "Names to be applied to resources"
   type        = map(string)
+  defualt = {
+    "" = ""
+    "" = ""
+    "" = ""
+  }
 }
 
 variable "tags" {
   description = "Tags to be applied to resources"
   type        = map(string)
+  default = {
+    "" = "MANAGER:DEV"
+    "" = "MANAGER:PRD"
+  }
 }
 
 variable "naming_rules" {
