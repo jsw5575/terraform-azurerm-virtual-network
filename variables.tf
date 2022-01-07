@@ -6,6 +6,7 @@ variable "resource_group_name" {
 variable "location" {
   description = "Azure Region"
   type        = string
+  default     = "koreacentral"
 }
 
 variable "names" {
@@ -21,7 +22,7 @@ variable "tags" {
 variable "naming_rules" {
   description = "naming conventions yaml file"
   type        = string
-  default     = ""
+  default     = "swjeong"
 }
 
 variable "enforce_subnet_names" {
